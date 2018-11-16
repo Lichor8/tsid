@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="tsid" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\doxygen\;CMake Files\src\;CMake Files\unittest\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="generate-template-css">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 generate-template-css" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 test" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="doc">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 doc" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="deb">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 deb" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="dist_tarxz">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 dist_tarxz" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="dist_tarbz2">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 dist_tarbz2" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="distclean">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 distclean" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="dist_targz">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 dist_targz" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="distdir">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 distdir" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="dist">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 dist" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="distorig">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 distorig" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="uninstall">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 uninstall" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="distcheck">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 distcheck" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="release">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 release" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="deb-src">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 deb-src" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tsid">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/src/libtsid.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/src" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 tsid" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tsid/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/src/libtsid.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/src" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 tsid/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="trajectories">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/trajectories" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 trajectories" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="trajectories/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/trajectories" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 trajectories/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="robot-wrapper">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/robot-wrapper" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 robot-wrapper" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="robot-wrapper/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/robot-wrapper" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 robot-wrapper/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tasks">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/tasks" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 tasks" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tasks/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/tasks" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 tasks/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="constraints">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/constraints" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 constraints" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="constraints/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/constraints" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 constraints/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="hqp_solvers">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/hqp_solvers" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 hqp_solvers" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="hqp_solvers/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/hqp_solvers" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 hqp_solvers/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="build_tests">
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 build_tests" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="contacts">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/contacts" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 contacts" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="contacts/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/contacts" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 contacts/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tsid-formulation">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/tsid-formulation" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 tsid-formulation" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tsid-formulation/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/tsid-formulation" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 tsid-formulation/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="math_utils">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/math_utils" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 math_utils" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="math_utils/fast">
+         <Option output="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/math_utils" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DEIGEN_RUNTIME_NO_MALLOC" />
+            <Add directory="/opt/openrobots/include" />
+            <Add directory="/opt/openrobots/include/eigen3" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE" />
+            <Add directory="/opt/openrobots/src/tsid-fork/_build-RELEASE/include" />
+            <Add directory="/opt/openrobots/src/tsid-fork/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/assimp" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 math_utils/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/opt/openrobots/src/tsid-fork/_build-RELEASE/unittest/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/config.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/contacts/contact-6d.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/contacts/contact-base.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/contacts/fwd.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/formulations/inverse-dynamics-formulation-acc-force.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/formulations/inverse-dynamics-formulation-base.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/math/constraint-base.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/math/constraint-bound.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/math/constraint-equality.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/math/constraint-inequality.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/math/fwd.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/math/utils.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/robots/fwd.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/robots/robot-wrapper.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/eiquadprog-fast.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/eiquadprog-rt.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/eiquadprog-rt.hxx">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/eiquadprog_2011.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/fwd.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-base.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-eiquadprog-fast.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-eiquadprog-rt.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-eiquadprog-rt.hxx">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-eiquadprog.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-factory.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-factory.hxx">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-output.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/solver-HQP-qpoases.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/solvers/utils.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/fwd.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-actuation-bounds.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-actuation-equality.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-actuation.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-base.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-com-equality.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-contact-force-equality.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-contact-force.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-joint-bounds.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-joint-posture.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-motion.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/tasks/task-se3-equality.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/trajectories/fwd.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/trajectories/trajectory-base.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/trajectories/trajectory-euclidian.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/trajectories/trajectory-se3.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/utils/Stdafx.hh">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/utils/statistics.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/include/tsid/utils/stop-watch.hpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/contacts/contact-6d.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/contacts/contact-base.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/formulations/inverse-dynamics-formulation-acc-force.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/formulations/inverse-dynamics-formulation-base.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/math/constraint-base.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/math/constraint-bound.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/math/constraint-equality.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/math/constraint-inequality.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/math/utils.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/robots/robot-wrapper.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/solvers/eiquadprog-fast.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/solvers/solver-HQP-base.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/solvers/solver-HQP-eiquadprog-fast.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/solvers/solver-HQP-eiquadprog.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/solvers/solver-HQP-factory.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/solvers/solver-HQP-qpoases.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/solvers/utils.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-actuation-bounds.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-actuation-equality.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-actuation.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-base.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-com-equality.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-contact-force-equality.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-contact-force.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-joint-bounds.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-joint-posture.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-motion.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/tasks/task-se3-equality.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/trajectories/trajectory-euclidian.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/trajectories/trajectory-se3.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/utils/statistics.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/utils/stop-watch.cpp">
+         <Option target="tsid"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/constraints.cpp">
+         <Option target="constraints"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/contacts.cpp">
+         <Option target="contacts"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/hqp_solvers.cpp">
+         <Option target="hqp_solvers"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/math_utils.cpp">
+         <Option target="math_utils"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/robot-wrapper.cpp">
+         <Option target="robot-wrapper"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/tasks.cpp">
+         <Option target="tasks"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/trajectories.cpp">
+         <Option target="trajectories"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/tsid-formulation.cpp">
+         <Option target="tsid-formulation"/>
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/base.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/logging.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/portability.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/compiler.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/debian.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/dist.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/distcheck.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/doxygen.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/header.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/pkg-config.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/shared-library.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/uninstall.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/install-data.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/release.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/version.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/package-config.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/boost.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/eigen.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/python.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/ide.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/apple.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/GNUInstallDirs.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/config.hh.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/deprecated.hh.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/warning.hh.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/config.h.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/cmake_uninstall.cmake.in">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/pkg-config.pc.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/test.cmake">
+          <Option virtualFolder="CMake Files\cmake\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/doxygen/Doxyfile.extra.in">
+          <Option virtualFolder="CMake Files\cmake\doxygen\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/cmake/doxygen/Doxyfile.in">
+          <Option virtualFolder="CMake Files\cmake\doxygen\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/opt/openrobots/src/tsid-fork/unittest/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\unittest\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

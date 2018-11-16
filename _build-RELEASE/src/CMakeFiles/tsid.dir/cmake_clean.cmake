@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tsid.dir/utils/statistics.cpp.o"
+  "CMakeFiles/tsid.dir/utils/stop-watch.cpp.o"
+  "CMakeFiles/tsid.dir/math/constraint-base.cpp.o"
+  "CMakeFiles/tsid.dir/math/constraint-equality.cpp.o"
+  "CMakeFiles/tsid.dir/math/constraint-inequality.cpp.o"
+  "CMakeFiles/tsid.dir/math/constraint-bound.cpp.o"
+  "CMakeFiles/tsid.dir/math/utils.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-base.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-actuation-bounds.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-actuation-equality.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-actuation.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-com-equality.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-contact-force-equality.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-contact-force.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-joint-bounds.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-joint-posture.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-motion.cpp.o"
+  "CMakeFiles/tsid.dir/tasks/task-se3-equality.cpp.o"
+  "CMakeFiles/tsid.dir/contacts/contact-base.cpp.o"
+  "CMakeFiles/tsid.dir/contacts/contact-6d.cpp.o"
+  "CMakeFiles/tsid.dir/trajectories/trajectory-se3.cpp.o"
+  "CMakeFiles/tsid.dir/trajectories/trajectory-euclidian.cpp.o"
+  "CMakeFiles/tsid.dir/solvers/eiquadprog-fast.cpp.o"
+  "CMakeFiles/tsid.dir/solvers/solver-HQP-base.cpp.o"
+  "CMakeFiles/tsid.dir/solvers/solver-HQP-factory.cpp.o"
+  "CMakeFiles/tsid.dir/solvers/solver-HQP-eiquadprog.cpp.o"
+  "CMakeFiles/tsid.dir/solvers/solver-HQP-eiquadprog-fast.cpp.o"
+  "CMakeFiles/tsid.dir/solvers/solver-HQP-qpoases.cpp.o"
+  "CMakeFiles/tsid.dir/solvers/utils.cpp.o"
+  "CMakeFiles/tsid.dir/robots/robot-wrapper.cpp.o"
+  "CMakeFiles/tsid.dir/formulations/inverse-dynamics-formulation-base.cpp.o"
+  "CMakeFiles/tsid.dir/formulations/inverse-dynamics-formulation-acc-force.cpp.o"
+  "libtsid.pdb"
+  "libtsid.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/tsid.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
