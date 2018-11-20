@@ -54,7 +54,7 @@ InverseDynamicsFormulationAccForce::InverseDynamicsFormulationAccForce(const std
   m_in = 0;
   m_hqpData.resize(2);
   m_Jc.setZero(m_k, m_v);
-  m_hqpData[0].push_back(make_pair<double, ConstraintBase*>(1.0, &m_baseDynamics));
+//  m_hqpData[0].push_back(make_pair<double, ConstraintBase*>(1.0, &m_baseDynamics));
 }
 
 

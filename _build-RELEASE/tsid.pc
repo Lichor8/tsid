@@ -12,7 +12,7 @@ doxygendocdir=
 Name: tsid
 Description: Efficient Task Space Inverse Dynamics for Multi-body Systems based on Pinocchio
 URL: http://github.com/stack-of-tasks/tsid
-Version: 1.1.0-3-g9f6d-dirty
+Version: 1.1.0-4-ge368-dirty
 Requires: eigen3 >= 3.2.0, pinocchio >= 1.3.0
 Conflicts: 
 Libs: -L${libdir}  -ltsid
