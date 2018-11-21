@@ -23,5 +23,5 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 #define PACKAGE_NAME "tsid"
-#define PACKAGE_STRING "tsid 1.1.0-4-ge368-dirty"
-#define PACKAGE_VERSION "1.1.0-4-ge368-dirty"
+#define PACKAGE_STRING "tsid 1.1.0-5-g8574-dirty"
+#define PACKAGE_VERSION "1.1.0-5-g8574-dirty"

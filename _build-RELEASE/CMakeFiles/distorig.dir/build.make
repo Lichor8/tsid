@@ -58,7 +58,7 @@ include CMakeFiles/distorig.dir/progress.make
 
 CMakeFiles/distorig:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating orig tarball..."
-	cmake -E copy tsid-1.1.0-4-ge368-dirty.tar.gz tsid-1.1.0-4-ge368-dirty.orig.tar.gz
+	cmake -E copy tsid-1.1.0-5-g8574-dirty.tar.gz tsid-1.1.0-5-g8574-dirty.orig.tar.gz
 
 distorig: CMakeFiles/distorig
 distorig: CMakeFiles/distorig.dir/build.make

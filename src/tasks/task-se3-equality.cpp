@@ -33,7 +33,7 @@ namespace tsid
       TaskMotion(name, robot),
       m_frame_name(frameName),
       m_constraint(name, 6, robot.nv()),
-      m_ref(12, 6)
+      m_ref(robot.nv()) // was 12, 6
     {
       assert(m_robot.model().existFrame(frameName));
       m_frame_id = m_robot.model().getFrameId(frameName);
@@ -42,11 +42,11 @@ namespace tsid
       m_a_ref.setZero();
       m_M_ref.setIdentity();
       m_wMl.setIdentity();
-      m_p_error_vec.setZero(6);
+      m_p_error_vec.setZero(6); // was 6
       m_v_error_vec.setZero(6);
-      m_p.resize(12);
+      m_p.resize(6); // was 12
       m_v.resize(6);
-      m_p_ref.resize(12);
+      m_p_ref.resize(6); // was 12
       m_v_ref_vec.resize(6);
       m_Kp.setZero(6);
       m_Kd.setZero(6);

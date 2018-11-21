@@ -53,9 +53,9 @@ namespace tsid
     {
       se3::urdf::buildModel(filename, rootJoint, m_model, m_verbose);
       m_model_filename = filename;
-      m_rotor_inertias.setZero(m_model.nv-6);
-      m_gear_ratios.setZero(m_model.nv-6);
-      m_Md.setZero(m_model.nv-6);
+      m_rotor_inertias.setZero(m_model.nv); // was -6
+      m_gear_ratios.setZero(m_model.nv); // was -6
+      m_Md.setZero(m_model.nv); // was -6
       m_M.setZero(m_model.nv, m_model.nv);
     }
     
@@ -139,7 +139,7 @@ namespace tsid
     const Matrix & RobotWrapper::mass(const Data & data)
     {
       m_M = data.M;
-      m_M.diagonal().tail(m_model.nv-6) += m_Md;
+      m_M.diagonal().tail(m_model.nv) += m_Md; // was m_model.nv-6
       return m_M;
     }
     

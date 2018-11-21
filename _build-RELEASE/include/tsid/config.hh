@@ -26,7 +26,7 @@
 # define TSID_CONFIG_HH
 
 // Package version (header).
-# define TSID_VERSION "1.1.0-4-ge368-dirty"
+# define TSID_VERSION "1.1.0-5-g8574-dirty"
 
 // Handle portable symbol export.
 // Defining manually which symbol should be exported is required
