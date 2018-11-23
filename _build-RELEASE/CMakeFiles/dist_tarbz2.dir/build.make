@@ -58,7 +58,7 @@ include CMakeFiles/dist_tarbz2.dir/progress.make
 
 CMakeFiles/dist_tarbz2:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating tar.bz2 tarball and its signature..."
-	/bin/tar -cjf tsid-1.1.0-5-g8574-dirty.tar.bz2 tsid-1.1.0-5-g8574-dirty/ && /usr/bin/gpg --detach-sign --armor -o /opt/openrobots/src/tsid-fork/_build-RELEASE/tsid-1.1.0-5-g8574-dirty.tar.bz2.sig /opt/openrobots/src/tsid-fork/_build-RELEASE/tsid-1.1.0-5-g8574-dirty.tar.bz2
+	/bin/tar -cjf tsid-1.1.0-6-g454b-dirty.tar.bz2 tsid-1.1.0-6-g454b-dirty/ && /usr/bin/gpg --detach-sign --armor -o /opt/openrobots/src/tsid-fork/_build-RELEASE/tsid-1.1.0-6-g454b-dirty.tar.bz2.sig /opt/openrobots/src/tsid-fork/_build-RELEASE/tsid-1.1.0-6-g454b-dirty.tar.bz2
 
 dist_tarbz2: CMakeFiles/dist_tarbz2
 dist_tarbz2: CMakeFiles/dist_tarbz2.dir/build.make

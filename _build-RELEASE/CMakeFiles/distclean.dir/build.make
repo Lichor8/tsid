@@ -58,7 +58,7 @@ include CMakeFiles/distclean.dir/progress.make
 
 CMakeFiles/distclean:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Cleaning dist sources..."
-	rm -rf /opt/openrobots/src/tsid-fork/_build-RELEASE/tsid-1.1.0-5-g8574-dirty/
+	rm -rf /opt/openrobots/src/tsid-fork/_build-RELEASE/tsid-1.1.0-6-g454b-dirty/
 
 distclean: CMakeFiles/distclean
 distclean: CMakeFiles/distclean.dir/build.make
