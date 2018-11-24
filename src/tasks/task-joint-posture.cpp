@@ -156,8 +156,10 @@ namespace tsid
                 - m_Kd.cwiseProduct(m_v_error)
                 + m_ref.acc;
 
+      // ||A*qdd - b||^2
+      // A = I (nv x nv)
       for(unsigned int i=0; i<m_activeAxes.size(); i++)
-        m_constraint.vector()(i) = m_a_des(m_activeAxes(i));
+        m_constraint.vector()(i) = m_a_des(m_activeAxes(i)); // b (nv x 1)
       return m_constraint;
     }
     

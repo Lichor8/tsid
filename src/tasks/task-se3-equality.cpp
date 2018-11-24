@@ -33,7 +33,7 @@ namespace tsid
       TaskMotion(name, robot),
       m_frame_name(frameName),
       m_constraint(name, 6, robot.nv()),
-      m_ref(robot.nv()) // was 12, 6
+      m_ref(12,6) // was 12, 6 (pos size=12, vel size=6)
     {
       assert(m_robot.model().existFrame(frameName));
       m_frame_id = m_robot.model().getFrameId(frameName);
@@ -42,11 +42,11 @@ namespace tsid
       m_a_ref.setZero();
       m_M_ref.setIdentity();
       m_wMl.setIdentity();
-      m_p_error_vec.setZero(6); // was 6
+      m_p_error_vec.setZero(6);
       m_v_error_vec.setZero(6);
-      m_p.resize(6); // was 12
+      m_p.resize(12); // was 12
       m_v.resize(6);
-      m_p_ref.resize(6); // was 12
+      m_p_ref.resize(12); // was 12
       m_v_ref_vec.resize(6);
       m_Kp.setZero(6);
       m_Kd.setZero(6);
@@ -156,12 +156,12 @@ namespace tsid
       errorInSE3(oMi, m_M_ref, m_p_error);          // pos err in local frame
       m_v_error = v_frame - m_wMl.actInv(m_v_ref);  // vel err in local frame
 
-      m_p_error_vec = m_p_error.toVector();
-      m_v_error_vec = m_v_error.toVector();
-      SE3ToVector(m_M_ref, m_p_ref);
-      m_v_ref_vec = m_v_ref.toVector();
-      SE3ToVector(oMi, m_p);
-      m_v = v_frame.toVector();
+      m_p_error_vec = m_p_error.toVector();   // local frame
+      m_v_error_vec = m_v_error.toVector();   // local frame
+      SE3ToVector(m_M_ref, m_p_ref);          // world frame
+      m_v_ref_vec = m_v_ref.toVector();       // world frame
+      SE3ToVector(oMi, m_p);                  // local frame?
+      m_v = v_frame.toVector();               // local frame?
 
 #ifndef NDEBUG
 //      PRINT_VECTOR(v_frame.toVector());
@@ -177,8 +177,24 @@ namespace tsid
       // we could do all computations in world frame
       m_robot.frameJacobianLocal(data, m_frame_id, m_J);
 
-      m_constraint.setMatrix(m_J);
-      m_constraint.setVector(m_a_des - m_drift.toVector());
+      // overwrite 6D error (local frame)
+//      m_p_error_vec = m_p - m_ref.pos;              // pos err in world frame
+//      m_v_error_vec = m_v - m_ref.vel;              // vel err in world frame
+//      m_p_error_vec = m_wMl.actInv(m_p_error_vec);  // pos err in local frame
+//      m_v_error_vec = m_wMl.actInv(m_v_error_vec);  // vel err in local frame
+
+//      m_p_error_vec = m_p - m_wMl.inverse().operator*(m_p_ref);              // pos err in local frame
+//      m_p_error_vec = m_p - oMi;
+//      m_v_error_vec = m_v - m_wMl.actInv(m_v_ref).toVector();   // vel err in local frame
+
+//      m_a_des = - m_Kp.cwiseProduct(m_p_error_vec)
+//                - m_Kd.cwiseProduct(m_v_error_vec)
+//                + m_wMl.actInv(m_a_ref).toVector(); // desired acc in local frame
+
+      // in local frame:
+      // ||A*qdd - b||^2
+      m_constraint.setMatrix(m_J); // A (6x6)
+      m_constraint.setVector(m_a_des - m_drift.toVector()); // b (6x1)
       return m_constraint;
     }
     
