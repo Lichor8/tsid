@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/opt/openrobots/src/tsid-fork/
 Determining if the C compiler works passed with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9ab1e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9ab1e.dir/build.make CMakeFiles/cmTC_9ab1e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ad8b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad8b2.dir/build.make CMakeFiles/cmTC_ad8b2.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9ab1e.dir/testCCompiler.c.o
-/usr/bin/gcc     -o CMakeFiles/cmTC_9ab1e.dir/testCCompiler.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_9ab1e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ab1e.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_9ab1e.dir/testCCompiler.c.o  -o cmTC_9ab1e -rdynamic 
+Building C object CMakeFiles/cmTC_ad8b2.dir/testCCompiler.c.o
+/usr/bin/gcc     -o CMakeFiles/cmTC_ad8b2.dir/testCCompiler.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ad8b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad8b2.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_ad8b2.dir/testCCompiler.c.o  -o cmTC_ad8b2 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1aba1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1aba1.dir/build.make CMakeFiles/cmTC_1aba1.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1eae0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1eae0.dir/build.make CMakeFiles/cmTC_1eae0.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc     -o CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_1aba1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1aba1.dir/link.txt --verbose=1
-/usr/bin/gcc      -v CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o  -o cmTC_1aba1 -rdynamic  
+Building C object CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc     -o CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1eae0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1eae0.dir/link.txt --verbose=1
+/usr/bin/gcc      -v CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o  -o cmTC_1eae0 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1aba1' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cck2fjGl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1aba1 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1eae0' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2aSDqv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1eae0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1aba1/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1aba1.dir/build.make CMakeFiles/cmTC_1aba1.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1eae0/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1eae0.dir/build.make CMakeFiles/cmTC_1eae0.dir/build]
   ignore line: [make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc     -o CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_1aba1]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1aba1.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc      -v CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o  -o cmTC_1aba1 -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc     -o CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1eae0]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1eae0.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc      -v CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o  -o cmTC_1eae0 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1aba1' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cck2fjGl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1aba1 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1eae0' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2aSDqv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1eae0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cck2fjGl.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc2aSDqv.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1aba1] ==> ignore
+    arg [cmTC_1eae0] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_1aba1.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_1eae0.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -155,14 +155,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1b810/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1b810.dir/build.make CMakeFiles/cmTC_1b810.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_9f0f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f0f5.dir/build.make CMakeFiles/cmTC_9f0f5.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1b810.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c11 -o CMakeFiles/cmTC_1b810.dir/feature_tests.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.c
-Linking C executable cmTC_1b810
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b810.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_1b810.dir/feature_tests.c.o  -o cmTC_1b810 -rdynamic 
+Building C object CMakeFiles/cmTC_9f0f5.dir/feature_tests.c.o
+/usr/bin/gcc    -std=c11 -o CMakeFiles/cmTC_9f0f5.dir/feature_tests.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9f0f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f0f5.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_9f0f5.dir/feature_tests.c.o  -o cmTC_9f0f5 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -175,14 +175,14 @@ make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFi
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_108a5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_108a5.dir/build.make CMakeFiles/cmTC_108a5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8d597/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8d597.dir/build.make CMakeFiles/cmTC_8d597.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_108a5.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c99 -o CMakeFiles/cmTC_108a5.dir/feature_tests.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.c
-Linking C executable cmTC_108a5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_108a5.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_108a5.dir/feature_tests.c.o  -o cmTC_108a5 -rdynamic 
+Building C object CMakeFiles/cmTC_8d597.dir/feature_tests.c.o
+/usr/bin/gcc    -std=c99 -o CMakeFiles/cmTC_8d597.dir/feature_tests.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8d597
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d597.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_8d597.dir/feature_tests.c.o  -o cmTC_8d597 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -195,14 +195,14 @@ make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFi
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9f571/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9f571.dir/build.make CMakeFiles/cmTC_9f571.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_95b46/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95b46.dir/build.make CMakeFiles/cmTC_95b46.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9f571.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c90 -o CMakeFiles/cmTC_9f571.dir/feature_tests.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.c
-Linking C executable cmTC_9f571
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f571.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_9f571.dir/feature_tests.c.o  -o cmTC_9f571 -rdynamic 
+Building C object CMakeFiles/cmTC_95b46.dir/feature_tests.c.o
+/usr/bin/gcc    -std=c90 -o CMakeFiles/cmTC_95b46.dir/feature_tests.c.o   -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.c
+Linking C executable cmTC_95b46
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95b46.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_95b46.dir/feature_tests.c.o  -o cmTC_95b46 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -213,28 +213,28 @@ make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFi
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f7f45/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f7f45.dir/build.make CMakeFiles/cmTC_f7f45.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_41346/fast"
+/usr/bin/make -f CMakeFiles/cmTC_41346.dir/build.make CMakeFiles/cmTC_41346.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f7f45.dir/testCXXCompiler.cxx.o
-/usr/bin/g++      -o CMakeFiles/cmTC_f7f45.dir/testCXXCompiler.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_f7f45
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7f45.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_f7f45.dir/testCXXCompiler.cxx.o  -o cmTC_f7f45 -rdynamic 
+Building CXX object CMakeFiles/cmTC_41346.dir/testCXXCompiler.cxx.o
+/usr/bin/g++      -o CMakeFiles/cmTC_41346.dir/testCXXCompiler.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_41346
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41346.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_41346.dir/testCXXCompiler.cxx.o  -o cmTC_41346 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_93f2d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_93f2d.dir/build.make CMakeFiles/cmTC_93f2d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_44c2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_44c2c.dir/build.make CMakeFiles/cmTC_44c2c.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++      -o CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_93f2d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93f2d.dir/link.txt --verbose=1
-/usr/bin/g++       -v CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_93f2d -rdynamic  
+Building CXX object CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++      -o CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_44c2c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44c2c.dir/link.txt --verbose=1
+/usr/bin/g++       -v CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_44c2c -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -244,8 +244,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_93f2d' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyDIbUx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_93f2d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_44c2c' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz86GOO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_44c2c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -253,14 +253,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_93f2d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_93f2d.dir/build.make CMakeFiles/cmTC_93f2d.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_44c2c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_44c2c.dir/build.make CMakeFiles/cmTC_44c2c.dir/build]
   ignore line: [make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++      -o CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_93f2d]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93f2d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++       -v CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_93f2d -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++      -o CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_44c2c]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44c2c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++       -v CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_44c2c -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -270,13 +270,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_93f2d' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyDIbUx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_93f2d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_44c2c' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz86GOO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_44c2c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccyDIbUx.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccz86GOO.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_93f2d] ==> ignore
+    arg [cmTC_44c2c] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_93f2d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_44c2c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -338,14 +338,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4d830/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4d830.dir/build.make CMakeFiles/cmTC_4d830.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6e567/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6e567.dir/build.make CMakeFiles/cmTC_6e567.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4d830.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++14 -o CMakeFiles/cmTC_4d830.dir/feature_tests.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4d830
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d830.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_4d830.dir/feature_tests.cxx.o  -o cmTC_4d830 -rdynamic 
+Building CXX object CMakeFiles/cmTC_6e567.dir/feature_tests.cxx.o
+/usr/bin/g++     -std=c++14 -o CMakeFiles/cmTC_6e567.dir/feature_tests.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6e567
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e567.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_6e567.dir/feature_tests.cxx.o  -o cmTC_6e567 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -411,14 +411,14 @@ make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFi
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f5545/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f5545.dir/build.make CMakeFiles/cmTC_f5545.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f7b9a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7b9a.dir/build.make CMakeFiles/cmTC_f7b9a.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f5545.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++11 -o CMakeFiles/cmTC_f5545.dir/feature_tests.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f5545
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5545.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_f5545.dir/feature_tests.cxx.o  -o cmTC_f5545 -rdynamic 
+Building CXX object CMakeFiles/cmTC_f7b9a.dir/feature_tests.cxx.o
+/usr/bin/g++     -std=c++11 -o CMakeFiles/cmTC_f7b9a.dir/feature_tests.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f7b9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7b9a.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_f7b9a.dir/feature_tests.cxx.o  -o cmTC_f7b9a -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -484,14 +484,14 @@ make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFi
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b76ce/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b76ce.dir/build.make CMakeFiles/cmTC_b76ce.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_57637/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57637.dir/build.make CMakeFiles/cmTC_57637.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b76ce.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++98 -o CMakeFiles/cmTC_b76ce.dir/feature_tests.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b76ce
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b76ce.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_b76ce.dir/feature_tests.cxx.o  -o cmTC_b76ce -rdynamic 
+Building CXX object CMakeFiles/cmTC_57637.dir/feature_tests.cxx.o
+/usr/bin/g++     -std=c++98 -o CMakeFiles/cmTC_57637.dir/feature_tests.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_57637
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57637.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTC_57637.dir/feature_tests.cxx.o  -o cmTC_57637 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 
@@ -555,15 +555,15 @@ make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFi
 Performing C++ SOURCE FILE Test R-pedantic succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_41ade/fast"
-/usr/bin/make -f CMakeFiles/cmTC_41ade.dir/build.make CMakeFiles/cmTC_41ade.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3b4b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b4b1.dir/build.make CMakeFiles/cmTC_3b4b1.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_41ade.dir/src.cxx.o
-/usr/bin/g++     -DR-pedantic   -pedantic -o CMakeFiles/cmTC_41ade.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_3b4b1.dir/src.cxx.o
+/usr/bin/g++     -DR-pedantic   -pedantic -o CMakeFiles/cmTC_3b4b1.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_41ade
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41ade.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-pedantic    CMakeFiles/cmTC_41ade.dir/src.cxx.o  -o cmTC_41ade -rdynamic 
+Linking CXX executable cmTC_3b4b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b4b1.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-pedantic    CMakeFiles/cmTC_3b4b1.dir/src.cxx.o  -o cmTC_3b4b1 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -571,15 +571,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wno-long-long succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a96e6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a96e6.dir/build.make CMakeFiles/cmTC_a96e6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e5055/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5055.dir/build.make CMakeFiles/cmTC_e5055.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a96e6.dir/src.cxx.o
-/usr/bin/g++     -DR-Wno-long-long   -Wno-long-long -o CMakeFiles/cmTC_a96e6.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_e5055.dir/src.cxx.o
+/usr/bin/g++     -DR-Wno-long-long   -Wno-long-long -o CMakeFiles/cmTC_e5055.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_a96e6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a96e6.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wno-long-long    CMakeFiles/cmTC_a96e6.dir/src.cxx.o  -o cmTC_a96e6 -rdynamic 
+Linking CXX executable cmTC_e5055
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5055.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wno-long-long    CMakeFiles/cmTC_e5055.dir/src.cxx.o  -o cmTC_e5055 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -587,15 +587,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wall succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b52a3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b52a3.dir/build.make CMakeFiles/cmTC_b52a3.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_83ed5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_83ed5.dir/build.make CMakeFiles/cmTC_83ed5.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b52a3.dir/src.cxx.o
-/usr/bin/g++     -DR-Wall   -Wall -o CMakeFiles/cmTC_b52a3.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_83ed5.dir/src.cxx.o
+/usr/bin/g++     -DR-Wall   -Wall -o CMakeFiles/cmTC_83ed5.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_b52a3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b52a3.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wall    CMakeFiles/cmTC_b52a3.dir/src.cxx.o  -o cmTC_b52a3 -rdynamic 
+Linking CXX executable cmTC_83ed5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83ed5.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wall    CMakeFiles/cmTC_83ed5.dir/src.cxx.o  -o cmTC_83ed5 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -603,15 +603,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wextra succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fa657/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fa657.dir/build.make CMakeFiles/cmTC_fa657.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0b3b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0b3b1.dir/build.make CMakeFiles/cmTC_0b3b1.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fa657.dir/src.cxx.o
-/usr/bin/g++     -DR-Wextra   -Wextra -o CMakeFiles/cmTC_fa657.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_0b3b1.dir/src.cxx.o
+/usr/bin/g++     -DR-Wextra   -Wextra -o CMakeFiles/cmTC_0b3b1.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_fa657
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa657.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wextra    CMakeFiles/cmTC_fa657.dir/src.cxx.o  -o cmTC_fa657 -rdynamic 
+Linking CXX executable cmTC_0b3b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b3b1.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wextra    CMakeFiles/cmTC_0b3b1.dir/src.cxx.o  -o cmTC_0b3b1 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -619,15 +619,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wcast-align succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_06e4a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_06e4a.dir/build.make CMakeFiles/cmTC_06e4a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c3fb0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3fb0.dir/build.make CMakeFiles/cmTC_c3fb0.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_06e4a.dir/src.cxx.o
-/usr/bin/g++     -DR-Wcast-align   -Wcast-align -o CMakeFiles/cmTC_06e4a.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_c3fb0.dir/src.cxx.o
+/usr/bin/g++     -DR-Wcast-align   -Wcast-align -o CMakeFiles/cmTC_c3fb0.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_06e4a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06e4a.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wcast-align    CMakeFiles/cmTC_06e4a.dir/src.cxx.o  -o cmTC_06e4a -rdynamic 
+Linking CXX executable cmTC_c3fb0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3fb0.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wcast-align    CMakeFiles/cmTC_c3fb0.dir/src.cxx.o  -o cmTC_c3fb0 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -635,15 +635,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wcast-qual succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b9d6e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b9d6e.dir/build.make CMakeFiles/cmTC_b9d6e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_992b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_992b7.dir/build.make CMakeFiles/cmTC_992b7.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b9d6e.dir/src.cxx.o
-/usr/bin/g++     -DR-Wcast-qual   -Wcast-qual -o CMakeFiles/cmTC_b9d6e.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_992b7.dir/src.cxx.o
+/usr/bin/g++     -DR-Wcast-qual   -Wcast-qual -o CMakeFiles/cmTC_992b7.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_b9d6e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9d6e.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wcast-qual    CMakeFiles/cmTC_b9d6e.dir/src.cxx.o  -o cmTC_b9d6e -rdynamic 
+Linking CXX executable cmTC_992b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_992b7.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wcast-qual    CMakeFiles/cmTC_992b7.dir/src.cxx.o  -o cmTC_992b7 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -651,15 +651,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wformat succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e9aee/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e9aee.dir/build.make CMakeFiles/cmTC_e9aee.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_394bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_394bc.dir/build.make CMakeFiles/cmTC_394bc.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e9aee.dir/src.cxx.o
-/usr/bin/g++     -DR-Wformat   -Wformat -o CMakeFiles/cmTC_e9aee.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_394bc.dir/src.cxx.o
+/usr/bin/g++     -DR-Wformat   -Wformat -o CMakeFiles/cmTC_394bc.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_e9aee
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9aee.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wformat    CMakeFiles/cmTC_e9aee.dir/src.cxx.o  -o cmTC_e9aee -rdynamic 
+Linking CXX executable cmTC_394bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_394bc.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wformat    CMakeFiles/cmTC_394bc.dir/src.cxx.o  -o cmTC_394bc -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -667,15 +667,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wwrite-strings succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ae304/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ae304.dir/build.make CMakeFiles/cmTC_ae304.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7b346/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7b346.dir/build.make CMakeFiles/cmTC_7b346.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ae304.dir/src.cxx.o
-/usr/bin/g++     -DR-Wwrite-strings   -Wwrite-strings -o CMakeFiles/cmTC_ae304.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_7b346.dir/src.cxx.o
+/usr/bin/g++     -DR-Wwrite-strings   -Wwrite-strings -o CMakeFiles/cmTC_7b346.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_ae304
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae304.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wwrite-strings    CMakeFiles/cmTC_ae304.dir/src.cxx.o  -o cmTC_ae304 -rdynamic 
+Linking CXX executable cmTC_7b346
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b346.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wwrite-strings    CMakeFiles/cmTC_7b346.dir/src.cxx.o  -o cmTC_7b346 -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -683,15 +683,15 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test R-Wconversion succeeded with the following output:
 Change Dir: /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e9bae/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e9bae.dir/build.make CMakeFiles/cmTC_e9bae.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5e9ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5e9ae.dir/build.make CMakeFiles/cmTC_5e9ae.dir/build
 make[1]: Entering directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e9bae.dir/src.cxx.o
-/usr/bin/g++     -DR-Wconversion   -Wconversion -o CMakeFiles/cmTC_e9bae.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_5e9ae.dir/src.cxx.o
+/usr/bin/g++     -DR-Wconversion   -Wconversion -o CMakeFiles/cmTC_5e9ae.dir/src.cxx.o -c /opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp/src.cxx
 <command-line>:0:2: warning: missing whitespace after the macro name
-Linking CXX executable cmTC_e9bae
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9bae.dir/link.txt --verbose=1
-/usr/bin/g++    -DR-Wconversion    CMakeFiles/cmTC_e9bae.dir/src.cxx.o  -o cmTC_e9bae -rdynamic 
+Linking CXX executable cmTC_5e9ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e9ae.dir/link.txt --verbose=1
+/usr/bin/g++    -DR-Wconversion    CMakeFiles/cmTC_5e9ae.dir/src.cxx.o  -o cmTC_5e9ae -rdynamic 
 make[1]: Leaving directory '/opt/openrobots/src/tsid-fork/_build-RELEASE/CMakeFiles/CMakeTmp'
 
 Source file was:

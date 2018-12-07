@@ -163,6 +163,11 @@ namespace tsid
       SE3ToVector(oMi, m_p);                  // local frame?
       m_v = v_frame.toVector();               // local frame?
 
+      // debug
+      PRINT_VECTOR(m_p);
+      PRINT_VECTOR(m_p_ref);
+      PRINT_VECTOR(m_p_error_vec);
+
 #ifndef NDEBUG
 //      PRINT_VECTOR(v_frame.toVector());
 //      PRINT_VECTOR(m_v_ref.toVector());

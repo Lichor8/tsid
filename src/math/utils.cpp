@@ -50,6 +50,11 @@ namespace tsid
                      se3::Motion & error)
     {
       error = se3::log6(Mdes.inverse() * M);
+
+      // debug
+//      std::cout << M << std::endl;
+//      std::cout << Mdes << std::endl;
+//      std::cout << Mdes.inverse() << std::endl;
     }
     
     void solveWithDampingFromSvd(Eigen::JacobiSVD<Eigen::MatrixXd> & svd,
