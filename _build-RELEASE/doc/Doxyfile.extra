@@ -1,4 +1,0 @@
-INPUT                  = /opt/openrobots/src/tsid-fork/include
-IMAGE_PATH             = /opt/openrobots/src/tsid-fork/doc/pictures
-FILE_PATTERNS          = *.h *.idl
-
