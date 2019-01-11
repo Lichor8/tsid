@@ -144,7 +144,7 @@ namespace tsid
                                                     ConstRefVector ,
                                                     const Data & data)
     {
-      SE3 oMi;
+      SE3 oMi;            // frame position
       Motion v_frame;
       m_robot.framePosition(data, m_frame_id, oMi);
       m_robot.frameVelocity(data, m_frame_id, v_frame);
@@ -153,6 +153,9 @@ namespace tsid
       // Transformation from local to world
       m_wMl.rotation(oMi.rotation());
 
+      // m_p_error is a Motion data class, which is essentially holds a 6x1 vector
+      // in this case errorInSE3 returns a twist error 6x1 vector during time one
+      // which is essentially a conversion to position and orientation?
       errorInSE3(oMi, m_M_ref, m_p_error);          // pos err in local frame
       m_v_error = v_frame - m_wMl.actInv(m_v_ref);  // vel err in local frame
 
