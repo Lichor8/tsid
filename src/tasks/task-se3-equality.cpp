@@ -144,8 +144,8 @@ namespace tsid
                                                     ConstRefVector ,
                                                     const Data & data)
     {
-      SE3 oMi;            // frame position
-      Motion v_frame;
+      SE3 oMi;            // frame position and orientation w.r.t. world frame
+      Motion v_frame;     // frame twist w.r.t. to the parent joint
       m_robot.framePosition(data, m_frame_id, oMi);
       m_robot.frameVelocity(data, m_frame_id, v_frame);
       m_robot.frameClassicAcceleration(data, m_frame_id, m_drift);
@@ -163,8 +163,8 @@ namespace tsid
       m_v_error_vec = m_v_error.toVector();   // local frame
       SE3ToVector(m_M_ref, m_p_ref);          // world frame
       m_v_ref_vec = m_v_ref.toVector();       // world frame
-      SE3ToVector(oMi, m_p);                  // local frame?
-      m_v = v_frame.toVector();               // local frame?
+      SE3ToVector(oMi, m_p);                  // world frame
+      m_v = v_frame.toVector();               // local frame
 
       // debug
       PRINT_VECTOR(m_p);
