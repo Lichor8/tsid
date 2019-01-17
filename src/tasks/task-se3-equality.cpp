@@ -188,42 +188,53 @@ namespace tsid
 //______________________________________________________________________________
       // overwrite 6D error to 3D error (local frame)
       // todo: check order of error
-      TrajectorySample ref;
-      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector
-      ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector
+      // todo: make nv variable for DoF size
+      // todo: check drift, is 0?
+//      TrajectorySample ref;
+//      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector
+//      ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector
 
-      Vector p_error_vec;
-      p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
-      p_error_vec = m_wMl.actInv(p_error_vec);      // 3x1 * 3x3 pos err in local frame
-      Vector v = m_v.head(3);                       // get first 3 entries from 6x1 vector
-      Vector v_error_vec = v - ref.vel;                // 3x1 - 3x1 vel err in local frame
-      Vector a_ref = m_wMl.actInv(m_a_ref).toVector().head(3);
+//      Vector3 p_error_vec;
+//      p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
+//      p_error_vec = m_wMl.actInv(p_error_vec);      // 3x1 * 3x3 pos err in local frame
+//      Vector v = m_v.head(3);                       // get first 3 entries from 6x1 vector
+//      Vector v_error_vec = v - ref.vel;                // 3x1 - 3x1 vel err in local frame
+//      Vector a_ref = m_wMl.actInv(m_a_ref).toVector().head(3);
 
-      // desired acc in local frame
-      Vector a_des = - m_Kp.cwiseProduct(p_error_vec)
-                     - m_Kd.cwiseProduct(v_error_vec)
-                     + a_ref;                              // 3x1 desired acc in local frame
+//      // desired acc in local frame
+//      Vector a_des = - m_Kp.cwiseProduct(p_error_vec)
+//                     - m_Kd.cwiseProduct(v_error_vec)
+//                     + a_ref;                              // 3x1 desired acc in local frame
 
-      // use only the 3D part
-      Matrix6x J = m_J.block(0,0,3,3);             // J (3x3)
-      Vector drift = m_drift.toVector().head(3);  // Jd*qd (3x1)
+//      // use only the 3D part
+//      Matrix3x J = m_J.block(0,0,3,3);             // J (3x3)
+//      Vector6 drift;
+//      drift.head(3) = m_drift.toVector().head(3);  // Jd*qd (3x1)
 
-      // debug
-      std::cout<<J<<std::endl;
-      std::cout<<a_des<<std::endl;
-      std::cout<<drift<<std::endl;
+//      // convert to 6D for se3-task (required)
+//      const int nv = 6;
+//      m_J.setZero(6, nv);
+//      m_a_des.setZero(6);
 
-      // in local frame:
-      // ||A*qdd - b||^2
-      m_constraint.setMatrix(J); // A (3x3)
-      m_constraint.setVector(a_des - drift); // b (3x1)
-      return m_constraint;
+//      m_J.block(0,0,3,3) = J;
+//      m_a_des.head(3) = a_des;
+
+//      // debug
+//      std::cout<<m_J<<std::endl;
+//      std::cout<<m_a_des<<std::endl;
+//      std::cout<<drift<<std::endl;
+
+//      // in local frame:
+//      // ||A*qdd - b||^2
+//      m_constraint.setMatrix(m_J); // A (6x6)
+//      m_constraint.setVector(m_a_des - drift); // b (6x1)
 //______________________________________________________________________________
 
       // in local frame:
       // ||A*qdd - b||^2
-//      m_constraint.setMatrix(m_J); // A (6x6)
-//      m_constraint.setVector(m_a_des - m_drift.toVector()); // b (6x1)
+      m_constraint.setMatrix(m_J); // A (6x6)
+      m_constraint.setVector(m_a_des - m_drift.toVector()); // b (6x1)
+      return m_constraint;
     }
     
   }
