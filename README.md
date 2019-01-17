@@ -25,4 +25,4 @@ To install [pinocchio](https://github.com/stack-of-tasks/pinocchio) follow the i
     mkdir _build-RELEASE
     cd _build-RELEASE
     cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=/opt/openrobots
-    make install
+    sudo make install
