@@ -166,11 +166,6 @@ namespace tsid
       SE3ToVector(oMi, m_p);                  // world frame
       m_v = v_frame.toVector();               // local frame
 
-      // debug
-      PRINT_VECTOR(m_p);
-      PRINT_VECTOR(m_p_ref);
-      PRINT_VECTOR(m_p_error_vec);
-
 #ifndef NDEBUG
 //      PRINT_VECTOR(v_frame.toVector());
 //      PRINT_VECTOR(m_v_ref.toVector());
@@ -185,7 +180,7 @@ namespace tsid
       // we could do all computations in world frame
       m_robot.frameJacobianLocal(data, m_frame_id, m_J);
 
-      // overwrite 6D error (local frame)
+      // overwrite 6D error to 3D error (local frame)
 //      m_p_error_vec = m_p - m_ref.pos;              // pos err in world frame
 //      m_v_error_vec = m_v - m_ref.vel;              // vel err in world frame
 //      m_p_error_vec = m_wMl.actInv(m_p_error_vec);  // pos err in local frame
@@ -198,6 +193,11 @@ namespace tsid
 //      m_a_des = - m_Kp.cwiseProduct(m_p_error_vec)
 //                - m_Kd.cwiseProduct(m_v_error_vec)
 //                + m_wMl.actInv(m_a_ref).toVector(); // desired acc in local frame
+
+      // debug
+      PRINT_VECTOR(m_p);
+      PRINT_VECTOR(m_p_ref);
+      PRINT_VECTOR(m_p_error_vec);
 
       // in local frame:
       // ||A*qdd - b||^2
