@@ -188,7 +188,7 @@ namespace tsid
 //______________________________________________________________________________
       // overwrite 6D error to 3D error (local frame)
       // todo: check order of error
-      // todo: make nv variable for DoF size
+      // todo: make nv variable for DoF size (i.e. handle variable DoF)
       // todo: check drift, is 0?
 //      TrajectorySample ref;
 //      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector
