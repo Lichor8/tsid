@@ -33,7 +33,7 @@ namespace tsid
       TaskMotion(name, robot),
       m_frame_name(frameName),
       m_constraint(name, 6, robot.nv()),
-      m_ref(12,6) // was 12, 6 (pos size=12, vel size=6)
+      m_ref(12,6) // (pos size=12, vel size=6)
     {
       assert(m_robot.model().existFrame(frameName));
       m_frame_id = m_robot.model().getFrameId(frameName);
@@ -44,9 +44,9 @@ namespace tsid
       m_wMl.setIdentity();
       m_p_error_vec.setZero(6);
       m_v_error_vec.setZero(6);
-      m_p.resize(12); // was 12
+      m_p.resize(12);
       m_v.resize(6);
-      m_p_ref.resize(12); // was 12
+      m_p_ref.resize(12);
       m_v_ref_vec.resize(6);
       m_Kp.setZero(6);
       m_Kd.setZero(6);
@@ -57,7 +57,7 @@ namespace tsid
     int TaskSE3Equality::dim() const
     {
       //return self._mask.sum ()
-      return 6;
+      return 6; // did I edit this?
     }
 
     const Vector & TaskSE3Equality::Kp() const { return m_Kp; }
@@ -145,31 +145,34 @@ namespace tsid
                                                     const Data & data)
     {
       SE3 oMi;            // frame position and orientation w.r.t. world frame
-      Motion v_frame;     // frame twist w.r.t. to the parent joint
+      Motion v_frame;     // frame "twist" w.r.t. to the parent joint
       m_robot.framePosition(data, m_frame_id, oMi);
       m_robot.frameVelocity(data, m_frame_id, v_frame);
       m_robot.frameClassicAcceleration(data, m_frame_id, m_drift);
 
       // Transformation from local to world
       m_wMl.rotation(oMi.rotation());
+      std::cout<<"m_wMl:"<<std::endl;
+      std::cout<<m_wMl<<std::endl;
 
       // m_p_error is a Motion data class, which is essentially holds a 6x1 vector
       // in this case errorInSE3 returns a twist error 6x1 vector during time one
-      // which is essentially a conversion to position and orientation?
+      // which is essentially a conversion from twist to position and orientation?
       errorInSE3(oMi, m_M_ref, m_p_error);          // pos err in local frame
       m_v_error = v_frame - m_wMl.actInv(m_v_ref);  // vel err in local frame
 
-      m_p_error_vec = m_p_error.toVector();   // local frame
-      m_v_error_vec = m_v_error.toVector();   // local frame
-      SE3ToVector(m_M_ref, m_p_ref);          // world frame
-      m_v_ref_vec = m_v_ref.toVector();       // world frame
-      SE3ToVector(oMi, m_p);                  // world frame
-      m_v = v_frame.toVector();               // local frame
+      m_p_error_vec = m_p_error.toVector();   // local frame 6x1
+      m_v_error_vec = m_v_error.toVector();   // local frame 6x1
+      SE3ToVector(m_M_ref, m_p_ref);          // world frame 12x1
+      m_v_ref_vec = m_v_ref.toVector();       // world frame 6x1
+      SE3ToVector(oMi, m_p);                  // world frame 12x1
+      m_v = v_frame.toVector();               // local frame 6x1
 
       // debug
       PRINT_VECTOR(m_p);
       PRINT_VECTOR(m_p_ref);
       PRINT_VECTOR(m_p_error_vec);
+      std::cout<<v_frame<<std::endl;
 
 #ifndef NDEBUG
 //      PRINT_VECTOR(v_frame.toVector());
@@ -187,18 +190,19 @@ namespace tsid
 
 //______________________________________________________________________________
       // overwrite 6D error to 3D error (local frame)
+      // todo: check fixed mistake in velocity error
       // todo: check order of error
       // todo: make nv variable for DoF size (i.e. handle variable DoF)
       // todo: check drift, is 0?
 //      TrajectorySample ref;
-//      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector
-//      ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector
+//      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector world frame
+//      ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector world frame
 
 //      Vector3 p_error_vec;
 //      p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
 //      p_error_vec = m_wMl.actInv(p_error_vec);      // 3x1 * 3x3 pos err in local frame
-//      Vector v = m_v.head(3);                       // get first 3 entries from 6x1 vector
-//      Vector v_error_vec = v - ref.vel;                // 3x1 - 3x1 vel err in local frame
+//      Vector v = m_v.head(3);                       // get first 3 entries from 6x1 vector local frame
+//      Vector v_error_vec = v - m_wMl.actInv(ref.vel);                // 3x1 - 3x1 vel err in local frame
 //      Vector a_ref = m_wMl.actInv(m_a_ref).toVector().head(3);
 
 //      // desired acc in local frame
