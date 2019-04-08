@@ -207,6 +207,11 @@ namespace tsid
                                      Motion & frameVelocity) const
     {
       const Frame & f = m_model.frames[index];
+      const Frame & f0 = m_model.frames[1];
+      std::cout<<f<<std::endl;
+      std::cout<<data.v[f.parent]<<std::endl;
+      std::cout<<f0<<std::endl;
+      std::cout<<m_model.frames.size()<<std::endl;
       frameVelocity = f.placement.actInv(data.v[f.parent]);
     }
     
