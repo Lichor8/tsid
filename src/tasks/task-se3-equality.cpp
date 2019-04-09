@@ -198,11 +198,13 @@ namespace tsid
 //      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector world frame
 //      ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector world frame
 
+//      Motion v_ref = Motion(ref.vel);
+
 //      Vector3 p_error_vec;
 //      p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
 //      p_error_vec = m_wMl.actInv(p_error_vec);      // 3x1 * 3x3 pos err in local frame
 //      Vector v = m_v.head(3);                       // get first 3 entries from 6x1 vector local frame
-//      Vector v_error_vec = v - m_wMl.actInv(ref.vel);                // 3x1 - 3x1 vel err in local frame
+//      Vector v_error_vec = v - m_wMl.actInv(v_ref).toVector().head(3);  // 3x1 - 3x1 vel err in local frame
 //      Vector a_ref = m_wMl.actInv(m_a_ref).toVector().head(3);
 
 //      // desired acc in local frame
@@ -224,9 +226,9 @@ namespace tsid
 //      m_a_des.head(3) = a_des;
 
 //      // debug
-//      std::cout<<m_J<<std::endl;
-//      std::cout<<m_a_des<<std::endl;
-//      std::cout<<drift<<std::endl;
+//      std::cout<<"m_J:"<<std::endl<<m_J<<std::endl;
+//      std::cout<<"m_a_des:"<<std::endl<<m_a_des<<std::endl;
+//      std::cout<<"drift:"<<std::endl<<drift<<std::endl;
 
 //      // in local frame:
 //      // ||A*qdd - b||^2
@@ -234,10 +236,58 @@ namespace tsid
 //      m_constraint.setVector(m_a_des - drift); // b (6x1)
 //______________________________________________________________________________
 
+//______________________________________________________________________________
+      // task point (world frame)
+      // todo: check order of error
+      // todo: make nv variable for DoF size (i.e. handle variable DoF) (use Jacobian size? or just set zero?)
+      // todo: check drift, is 0?
+
+//      m_robot.frameJacobianWorld(data, m_frame_id, m_J);
+      m_J = m_wMl.toActionMatrix()*m_J; // Jacobian in local[world] frame
+      m_drift = m_wMl.act(m_drift);
+
+      TrajectorySample ref;
+      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector world frame
+      ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector world frame
+
+      Vector3 p_error_vec;
+      p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
+      Vector v_error_vec = m_wMl.act(v_frame).toVector().head(3) - ref.vel;  // 3x1 - 3x1 vel err in world frame
+      Vector a_ref = m_a_ref.toVector().head(3);
+
+      // desired acc in world frame
+      Vector a_des = - m_Kp.cwiseProduct(p_error_vec)
+                     - m_Kd.cwiseProduct(v_error_vec)
+                     + a_ref;                              // 3x1 desired acc in local frame
+
+      // use only the 3D part
+      Matrix3x J = m_J.block(0,0,3,3);             // J (3x3)
+      Vector6 drift;
+      drift.head(3) = m_drift.toVector().head(3);  // Jd*qd (3x1)
+
+      // convert to 6D for se3-task (required)
+      const int nv = 6;
+      m_J.setZero(6, nv);
+      m_a_des.setZero(6);
+
+      m_J.block(0,0,3,3) = J;
+      m_a_des.head(3) = a_des;
+
+      // debug
+      std::cout<<"m_J:"<<std::endl<<m_J<<std::endl;
+      std::cout<<"m_a_des:"<<std::endl<<m_a_des<<std::endl;
+      std::cout<<"drift:"<<std::endl<<drift<<std::endl;
+
       // in local frame:
       // ||A*qdd - b||^2
       m_constraint.setMatrix(m_J); // A (6x6)
-      m_constraint.setVector(m_a_des - m_drift.toVector()); // b (6x1)
+      m_constraint.setVector(m_a_des - drift); // b (6x1)
+//______________________________________________________________________________
+
+//      // in local frame:
+//      // ||A*qdd - b||^2
+//      m_constraint.setMatrix(m_J); // A (6x6)
+//      m_constraint.setVector(m_a_des - m_drift.toVector()); // b (6x1)
       return m_constraint;
     }
     
