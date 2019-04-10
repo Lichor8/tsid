@@ -189,11 +189,15 @@ namespace tsid
       m_robot.frameJacobianLocal(data, m_frame_id, m_J);
 
 //______________________________________________________________________________
-      // overwrite 6D error to 3D error (local frame)
-      // todo: check fixed mistake in velocity error
+      // task point (C local frame)
       // todo: check order of error
       // todo: make nv variable for DoF size (i.e. handle variable DoF)
       // todo: check drift, is 0?
+
+      // input: m_ref.pos = A^o_E
+      // input: m_ref.vel = C[A]^v_A,E
+      // input: m_ref.acc = C[A]^vd_A,E
+
 //      TrajectorySample ref;
 //      ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector world frame
 //      ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector world frame
@@ -237,13 +241,20 @@ namespace tsid
 //______________________________________________________________________________
 
 //______________________________________________________________________________
-      // task point (world frame)
+      // task point (C[A] mixed frame)
       // todo: check order of error
       // todo: make nv variable for DoF size (i.e. handle variable DoF) (use Jacobian size? or just set zero?)
       // todo: check drift, is 0?
+      // todo: drift should also use a 3x6 J, however I do not control this part of the software, so
+      // minor influence of rotation part? or does this part end up being zero due to other zeor parts?
 
-//      m_robot.frameJacobianWorld(data, m_frame_id, m_J);
-      m_J = m_wMl.toActionMatrix()*m_J; // Jacobian in local[world] frame
+      // input: m_ref.pos = A^o_E
+      // input: m_ref.vel = C[A]^v_A,E
+      // input: m_ref.acc = C[A]^vd_A,E
+
+      std::cout<<"--------Task Point-------"<<std::endl;
+
+      m_J = m_wMl.toActionMatrix()*m_J; // Jacobian: C[A]^J_A,C = C[A]^X_C * C^J_A,C * q
       m_drift = m_wMl.act(m_drift);
 
       TrajectorySample ref;
@@ -252,7 +263,7 @@ namespace tsid
 
       Vector3 p_error_vec;
       p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
-      Vector v_error_vec = m_wMl.act(v_frame).toVector().head(3) - ref.vel;  // 3x1 - 3x1 vel err in world frame
+      Vector v_error_vec = m_wMl.act(v_frame).toVector().head(3) - ref.vel;  // 3x1 - 3x1 vel err in local[world] frame
       Vector a_ref = m_a_ref.toVector().head(3);
 
       // desired acc in world frame
@@ -261,7 +272,7 @@ namespace tsid
                      + a_ref;                              // 3x1 desired acc in local frame
 
       // use only the 3D part
-      Matrix3x J = m_J.block(0,0,3,3);             // J (3x3)
+      Matrix3x J = m_J.block(0,0,3,6);             // J (3x3)
       Vector6 drift;
       drift.head(3) = m_drift.toVector().head(3);  // Jd*qd (3x1)
 
@@ -270,13 +281,19 @@ namespace tsid
       m_J.setZero(6, nv);
       m_a_des.setZero(6);
 
-      m_J.block(0,0,3,3) = J;
+      m_J.block(0,0,3,6) = J;
       m_a_des.head(3) = a_des;
 
       // debug
       std::cout<<"m_J:"<<std::endl<<m_J<<std::endl;
       std::cout<<"m_a_des:"<<std::endl<<m_a_des<<std::endl;
       std::cout<<"drift:"<<std::endl<<drift<<std::endl;
+
+      PRINT_VECTOR(ref.pos);
+      PRINT_VECTOR(oMi.translation());
+      PRINT_VECTOR(p_error_vec);
+
+      std::cout<<"-----------------------"<<std::endl;
 
       // in local frame:
       // ||A*qdd - b||^2
