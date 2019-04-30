@@ -260,18 +260,18 @@ namespace tsid
       TrajectorySample ref;
       ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector world frame
       ref.vel = m_ref.vel.head(3);  // get first 3 entries from 6x1 vector world frame
+      ref.acc = m_a_ref.toVector().head(3);
 
       Vector3 p_error_vec;
       p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
       m_v = m_wMl.act(v_frame).toVector();          // m_v required for velocity() method
       Vector3 v_error_vec = m_v.head(3) - ref.vel;  // 3x1 - 3x1 vel err in local[world] frame
-      Vector3 a_ref = m_a_ref.toVector().head(3);
+      Vector3 a_ref = ref.acc;
 
       std::cout<<"m_v:"<<std::endl<<m_v<<std::endl;
       std::cout<<"ref.vel:"<<std::endl<<ref.vel<<std::endl;
 
-      std::cout<<"m_a_ref:"<<std::endl<<m_a_ref.toVector().head(3)<<std::endl;
-      std::cout<<"m_a_ref:"<<std::endl<<m_ref.acc.head(3)<<std::endl;
+      std::cout<<"m_a_ref:"<<std::endl<<m_ref.acc<<std::endl;
 
 
 
