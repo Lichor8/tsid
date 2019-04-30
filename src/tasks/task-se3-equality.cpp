@@ -254,8 +254,8 @@ namespace tsid
 
       std::cout<<"--------Task Point-------"<<std::endl;
 
-      m_J = m_wMl.toActionMatrix()*m_J; // Jacobian: C[A]^J_A,C = C[A]^X_C * C^J_A,C * q
-      m_drift = m_wMl.act(m_drift);
+      m_J = m_wMl.toActionMatrix()*m_J; // Jacobian: C[A]^J_A,C       = C[A]^X_C * C^J_A,C
+      m_drift = m_wMl.act(m_drift);     // drift:    C[A]^Jd_A,C * qd = C[A]^X_C * C^Jd_A,C * qd
 
       TrajectorySample ref;
       ref.pos = m_ref.pos.head(3);  // get first 3 entries from 12x1 vector world frame
@@ -263,11 +263,29 @@ namespace tsid
 
       Vector3 p_error_vec;
       p_error_vec = oMi.translation() - ref.pos;    // 3x1 - 3x1  pos err in world frame
-      Vector v_error_vec = m_wMl.act(v_frame).toVector().head(3) - ref.vel;  // 3x1 - 3x1 vel err in local[world] frame
-      Vector a_ref = m_a_ref.toVector().head(3);
+      m_v = m_wMl.act(v_frame).toVector();          // m_v required for velocity() method
+      Vector3 v_error_vec = m_v.head(3) - ref.vel;  // 3x1 - 3x1 vel err in local[world] frame
+      Vector3 a_ref = m_a_ref.toVector().head(3);
+
+      std::cout<<"m_v:"<<std::endl<<m_v<<std::endl;
+      std::cout<<"ref.vel:"<<std::endl<<ref.vel<<std::endl;
+
+      std::cout<<"m_a_ref:"<<std::endl<<m_a_ref.toVector().head(3)<<std::endl;
+      std::cout<<"m_a_ref:"<<std::endl<<m_ref.acc.head(3)<<std::endl;
+
+
+
+////       separated task-point hack
+////      Motion a_frame;
+////      m_robot.frameAcceleration(data, m_frame_id, a_frame);
+
+//      v_error_vec = v_error_vec - m_wMl.act(v_frame).toVector().head(3);
+////      a_ref = a_ref + m_wMl.act(a_frame).toVector().head(3);
+//      std::cout<<"data.ddq:"<<std::endl<<data.ddq<<std::endl;
+//      a_ref = a_ref + (m_J*data.ddq).head(3) + m_drift.toVector().head(3);
 
       // desired acc in world frame
-      Vector a_des = - m_Kp.cwiseProduct(p_error_vec)
+      Vector3 a_des = - m_Kp.cwiseProduct(p_error_vec)
                      - m_Kd.cwiseProduct(v_error_vec)
                      + a_ref;                              // 3x1 desired acc in local frame
 

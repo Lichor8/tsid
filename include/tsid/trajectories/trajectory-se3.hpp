@@ -33,6 +33,7 @@ namespace tsid
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 
       typedef se3::SE3 SE3;
+      typedef Eigen::Matrix<double,6,1> Vector6;
 
       TrajectorySE3Constant(const std::string & name);
 
@@ -41,6 +42,10 @@ namespace tsid
       unsigned int size() const;
 
       void setReference(const SE3 & M);
+
+      void setReferenceVelocity(const Vector6 & v); // added by Rik
+
+      void setReferenceAcceleration(const Vector6 & a); // added by Rik
 
       const TrajectorySample & operator()(double time);
 

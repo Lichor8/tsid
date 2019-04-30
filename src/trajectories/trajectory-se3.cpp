@@ -37,6 +37,24 @@ namespace tsid
       SE3ToVector(M, m_sample.pos);
     }
 
+    // added by Rik
+    void TrajectorySE3Constant::setReference(const SE3 & M)
+    {
+      SE3ToVector(M, m_sample.pos);
+    }
+
+    // added by Rik
+    void TrajectorySE3Constant::setReferenceVelocity(const Vector6 & v)
+    {
+      m_sample.vel = v;
+    }
+
+    // added by Rik
+    void TrajectorySE3Constant::setReferenceAcceleration(const Vector6 & a)
+    {
+      m_sample.acc = a;
+    }
+
     unsigned int TrajectorySE3Constant::size() const
     {
       return 6;
