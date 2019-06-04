@@ -159,6 +159,10 @@ namespace tsid
       // in this case errorInSE3 returns a twist error 6x1 vector during time one
       // which is essentially a conversion from twist to position and orientation?
       errorInSE3(oMi, m_M_ref, m_p_error);          // pos err in local frame
+//      Vector3 er = oMi.translation() - m_M_ref.translation();
+//      Vector3 test = er.cross(m_M_ref.rotation());
+//      Vector6 test2; test2.head(3) = test;
+//      Motion test3 = Motion(test2);
       m_v_error = v_frame - m_wMl.actInv(m_v_ref);  // vel err in local frame
 
       m_p_error_vec = m_p_error.toVector();   // local frame 6x1
@@ -286,8 +290,8 @@ namespace tsid
 
       // desired acc in world frame
       Vector3 a_des = - m_Kp.cwiseProduct(p_error_vec)
-                     - m_Kd.cwiseProduct(v_error_vec)
-                     + a_ref;                              // 3x1 desired acc in local frame
+                      - m_Kd.cwiseProduct(v_error_vec)
+                      + a_ref;                              // 3x1 desired acc in local frame
 
       // use only the 3D part
       Matrix3x J = m_J.block(0,0,3,6);             // J (3x3)
@@ -301,6 +305,12 @@ namespace tsid
 
       m_J.block(0,0,3,6) = J;
       m_a_des.head(3) = a_des;
+
+      // logging
+      m_p_error_vec = Vector6::Zero();
+      m_v_error_vec = Vector6::Zero();
+      m_p_error_vec.head(3) = p_error_vec;
+      m_v_error_vec.head(3) = v_error_vec;
 
       // debug
       std::cout<<"m_J:"<<std::endl<<m_J<<std::endl;
